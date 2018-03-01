@@ -1,0 +1,67 @@
+body {
+    color: #493627;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* link colors */
+a:link {
+    color: #493627;
+}
+
+a:visited {
+    color: #493627;
+}
+
+a:hover {
+    color: #28752c;
+}
+
+a:active {
+    color: #493627;
+}
+
+.content {
+    margin-top: 7%;
+}
+
+#productLinkMain {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.card-image-top {
+    height: 200;
+}
+
+#footer {
+    background-color: #493627;
+    color: #fff;
+    padding: 0.5%;
+    width: 100%;
+}
+
+#footer a {
+    color: #fff;
+}
+
+.brands {
+    margin: 1%;
+}
+
+#contactForm {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        margin-top: 15%;
+    }
+
+    #aboutItemImage {
+        display: none;
+    }
+}
