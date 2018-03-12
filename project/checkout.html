@@ -52,14 +52,121 @@
     </div>
 
     <!-- contact -->
-    <div class="container content text-center">
-            <h3 style="margin-bottom: 3%;">Checkout</h3>
+    <div class="container content">
+            <h3 style="margin-bottom: 3%; text-align: center;">Checkout</h3>
        
+        <!-- start cart content -->
+    <div class="container" id="content">
+        
+                <div id="div1">
+                    <h3 id="items"></h3>
+                    <h3 id="items2"></h3>
+                    <h3 id="items3"></h3>
+                    <h3 id="items4"></h3>
+                    <h3 id="items5"></h3>
+                    <h3 id="items6"></h3>
+                    <h3 id="items7"></h3>
+                    <h3 id="items8"></h3>
+                    <h3 id="items9"></h3>
+                    <h3 id="items10"></h3>
+                    <h3 id="items11"></h3>
+                    <h3 id="items12"></h3>
+                    <h3 id="items13"></h3>
+                    <h3 id="items14"></h3>
+                    <h3 id="items15"></h3>
+                    <h3 id="items16"></h3>
+                    <h3 id="items17"></h3>
+                    <h3 id="items18"></h3>
+                    
+                    <h3 id="totals" style="font-weight: bold; margin-top: 2%;"></h3>
+                    <h3 id="cancel"></h3>
+                    <br style="margin-top: 1%;">
+                    <button class="btn-success  btn-lg" type="button" id="my-btn" onclick="payment()">Buy</button>
+                    <button class="btn-danger  btn-lg" type="submit" onclick="removeItems()" id="my-btn2">Cancel</button>
+                </div>
+        
+        
+                <div id="my-div">
+                    <!-- CREDIT CARD FORM STARTS HERE -->
+                    <div class="center-block panel panel-default credit-card-box" id="cardinfo" style="display: none;">
+                        <div class="panel-heading display-table">
+                            <div class="row display-tr">
+                                <h3 class="panel-title display-td">Payment Details</h3>
+                                <div class="display-td">
+                                    <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <form role="form" id="payment-form">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="cardNumber">CARD NUMBER</label>
+                                            <div class="input-group">
+                                                <input type="tel" class="form-control" name="cardNumber" placeholder="Valid Card Number" autocomplete="cc-number" required autofocus />
+                                                <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-7 col-md-7">
+                                        <div class="form-group">
+                                            <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                                            <input type="tel" class="form-control" name="cardExpiry" placeholder="MM / YY" autocomplete="cc-exp" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-5 col-md-5 pull-right">
+                                        <div class="form-group">
+                                            <label for="cardCVC">CV CODE</label>
+                                            <input type="tel" class="form-control" name="cardCVC" placeholder="CVC" autocomplete="cc-csc" required />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="couponCode">COUPON CODE</label>
+                                            <input type="text" class="form-control" name="couponCode" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <button class="btn btn-success btn-lg btn-block" type="button" id="paybutton" onclick="orderComplete()">pay</button>
+                                    </div>
+                                </div>
+                                <div class="row" style="display:none;">
+                                    <div class="col-xs-12">
+                                        <p class="payment-errors"></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- CREDIT CARD FORM ENDS HERE -->
+        
+        
+                </div>
+        
+        
+        
+            </div>
+            </div>
+        
+            </div>
+            </div>
+        
+        
+        
+
+
 
     </div>
     
     <!-- footer -->
-    <div class="text-center" id="footer">
+    <div class="text-center fixed-bottom" id="footer" style="margin-top: 3%;">
         <h6>© March 2018 - Moon Child Decor<br>
             questions@moonchilddecor.com
             <em><p>
@@ -73,6 +180,228 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+        
+    <script>
+        var cardinfo = document.getElementById("cardinfo");
+        cardinfo.style.display = "none";
+        var name, name1, name2, name3, name4, name5, name6, name7, name8, name9, name10, name11, name12, name13, name14, name15, name16, name17 = 0;
+        var num1, num2, num3, num4, total = 0;
+        var successButton = document.getElementById("my-btn");
+        var dangerButton = document.getElementById("my-btn2");
+
+        successButton.style.display = "none";
+        dangerButton.style.display = "none";
+
+        name = Number(localStorage.getItem("elephant"));
+        name1 = Number(localStorage.getItem("buddhas"));
+        name2 = Number(localStorage.getItem("chakra"));
+        name3 = Number(localStorage.getItem("lantern"));
+        name4 = Number(localStorage.getItem("selLamp"))
+        name5 = Number(localStorage.getItem("woodTable"));
+        name6 = Number(localStorage.getItem("vintageFancy"));
+        name7 = Number(localStorage.getItem("corbettRug"));
+        name8 = Number(localStorage.getItem("persianRug"));
+        name9 = Number(localStorage.getItem("poufCover"));
+        name10 = Number(localStorage.getItem("poufOttoman"));
+        name11 = Number(localStorage.getItem("storageOttoman"));
+        name12 = Number(localStorage.getItem("multiMandala"));
+        name13 = Number(localStorage.getItem("macrameWall"));
+        name14 = Number(localStorage.getItem("macarmeMirror"));
+        name15 = Number(localStorage.getItem("wallCandle"));
+        name16 = Number(localStorage.getItem("featherWall"));
+        name17 = Number(localStorage.getItem("lightMandalaWall"));
+
+
+        if (!parseInt(name) === 0 || !parseInt(name1) === 0 || !parseInt(name2) === 0 || !parseInt(name3) === 0 || !parseInt(name4) === 0 || !parseInt(name5) === 0 || 
+        !parseInt(name6) === 0 || !parseInt(name7) === 0 || !parseInt(name8) === 0 || !parseInt(name9) === 0 || !parseInt(name10) === 0 || !parseInt(name11) === 0 || 
+        !parseInt(name12) === 0 || !parseInt(name13) === 0 || !parseInt(name14) === 0 || !parseInt(name15) === 0 || !parseInt(name16) === 0 || !parseInt(name17) === 0) {
+            document.getElementById("items").innerHTML = "<strong>Nothing has been added to the cart</strong>";
+            localStorage.setItem("message", "Items removed");
+
+        } else {
+
+        }
+
+        // show totals
+        if (parseInt(name) === 0) {} else {
+            document.getElementById("items").innerHTML = "Elephant Jali Sculpture: $" + name;
+        }
+
+        if (parseInt(name1) === 0) {
+
+        } else {
+            document.getElementById("items2").innerHTML = "Small Buddhas: $" + name1;
+        }
+        if (parseInt(name2) === 0) {
+
+        } else {
+            document.getElementById("items3").innerHTML = "Chakra Tree: $" + name2;
+        }
+        if (parseInt(name3) === 0) {
+
+        } else {
+            document.getElementById("items4").innerHTML = "Colorful Moroccan Lantern: $" + name3;
+        }
+        if (parseInt(name4) === 0) {
+
+        } else {
+            document.getElementById("items5").innerHTML = "Selenite Lamp: $" + name4;
+        }
+        if (parseInt(name5) === 0) {
+
+        } else {
+            document.getElementById("items6").innerHTML = "Hand Carved Accent Table: $" + name5;
+        }
+        if (parseInt(name6) === 0) {
+
+        } else {
+            document.getElementById("items7").innerHTML = "Vintage Fancy Blue Rug: $" + name6;
+        }
+        if (parseInt(name7) === 0) {
+
+        } else {
+            document.getElementById("items8").innerHTML = "Vintage Corbett Rug: $" + name7;
+        }
+        if (parseInt(name8) === 0) {
+
+        } else {
+            document.getElementById("items9").innerHTML = "Blue Persian Vintage Rug: $" + name8;
+        }
+        if (parseInt(name9) === 0) {
+
+        } else {
+            document.getElementById("items10").innerHTML = "Mandala Pouf Cover: $" + name9;
+        }
+        if (parseInt(name10) === 0) {
+
+        } else {
+            document.getElementById("items11").innerHTML = "Kelsey Pouf Ottoman: $" + name10;
+        }
+        if (parseInt(name11) === 0) {
+
+        } else {
+            document.getElementById("items12").innerHTML = "Ombre Storage Ottoman: $" + name11;
+        }
+        if (parseInt(name12) === 0) {
+
+        } else {
+            document.getElementById("items13").innerHTML = "Multicolor Mandala Wall Tapestry: $" + name12;
+        }
+        if (parseInt(name13) === 0) {
+
+        } else {
+            document.getElementById("items14").innerHTML = "Macrame Wall Hanging: $" + name13;
+        }
+        if (parseInt(name14) === 0) {
+
+        } else {
+            document.getElementById("items15").innerHTML = "Macrame Mirror Wall Hanging: $" + name14;
+        }
+        if (parseInt(name15) === 0) {
+
+        } else {
+            document.getElementById("items16").innerHTML = "Wooden Wall Candle Holder: $" + name15;
+        }
+        if (parseInt(name16) === 0) {
+
+        } else {
+            document.getElementById("items17").innerHTML = "Feather Wall Hanging: $" + name16;
+        }
+        if (parseInt(name17) === 0) {
+
+        } else {
+            document.getElementById("items18").innerHTML = "Light and Dark Mandala Tapestry: $" + name17;
+        }
+
+
+        //show total due
+        total = Number(name) + Number(name1) + Number(name2) + Number(name3) + Number(name4) + Number(name5) + 
+        Number(name6) + Number(name7) + Number(name8) + Number(name9) + Number(name10) + Number(name11) + 
+        Number(name12) + Number(name13) + Number(name14) + Number(name15) + Number(name16) + Number(name17);
+
+        if (!total == 0) {
+            document.getElementById("totals").innerHTML = "Total Amount Due: $" + total;
+            successButton.style.display = "inline";
+            dangerButton.style.display = "inline";
+            localStorage.setItem("total", total);
+        }
+
+        // cancel button
+        function removeItems() {
+            localStorage.clear();
+            $('#items').hide();
+            $('#items2').hide();
+            $('#items3').hide();
+            $('#items4').hide();
+            $('#items5').hide();
+            $('#items6').hide();
+            $('#items7').hide();
+            $('#items8').hide();
+            $('#items9').hide();
+            $('#items10').hide();
+            $('#items11').hide();
+            $('#items12').hide();
+            $('#items13').hide();
+            $('#items14').hide();
+            $('#items15').hide();
+            $('#items16').hide();
+            $('#items17').hide();
+            $('#items18').hide();
+            $('#totals').hide();
+            $('#my-btn').hide();
+            $('#my-btn2').hide();
+            document.getElementById("cancel").innerHTML = "Items Removed Successfully";
+                        setTimeout(function () { if (self.name != 'refreshed'){ self.name = 'refreshed'; self.location.reload(true); } else { self.name = ''; } }, 3000);
+        }
+
+        //payment
+        function payment() {
+            var myElement = document.getElementById('my-div');
+            var pageWidth = window.innerWidth,
+                pageHeight = window.innerHeight,
+                myElementWidth = myElement.offsetWidth,
+                myElementHeight = myElement.offsetHeight;
+            myElement.style.top = (pageHeight / 2) - (myElementHeight / 2) + "px";
+            myElement.style.left = (pageWidth / 2) - (myElementWidth / 2) + "px";
+            var cardinfo = document.getElementById("cardinfo");
+            cardinfo.style.display = "inline-grid";
+            var paybutton = document.getElementById("paybutton");
+            var total = Number(localStorage.getItem("total"));
+            paybutton.innerHTML = "Pay $" + total;
+            $(document).ready(function() {
+
+                $("#div1").remove();
+
+            });
+
+        }
+
+        function orderComplete() {
+
+            // thank you for your order message
+            $(document).ready(function() {
+
+                $("#my-div").remove();
+                alert('Thank you for your order!');
+                localStorage.clear();
+
+            });
+
+
+
+
+        }
+
+                if(localStorage.length===0){
+                document.getElementById("totalhd").style.display = "none";
+                    $(document).ready(function() {
+                          $('body').append('<h3 id="center" style="text-align: center; margin-top:30%;">There are no items on the cart</h3>');
+                });
+}
+
+    </script>
 
 </body>
 </html>
