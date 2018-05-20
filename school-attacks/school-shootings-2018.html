@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>School Shootings in America | 2018</title>
+    
+        <!-- Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" rel="stylesheet">
+        <link href="schoolshootings.css" rel="stylesheet">    
+    </head>
+    <body>
+        
+        <div class="container" id="chartsDiv">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        School Shootings in the US - 2018
+                        </button>
+                    </h5>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                            <h1>School Shootings in the United States</h1>
+                            <h3>2018</h3>
+                              <canvas id="2018Chart"></canvas>
+                              <p>
+                                  <div class="container">
+                                  <table class="table">
+                                      <thead>
+                                          <tr>
+                                              <th scope="col">Month</th>
+                                              <th scope="col">Location</th>
+                                              <th scope="col">Deaths</th>
+                                              <th scope="col">Injuries</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <th scope="row">January</th>
+                                              <td>Winston-Salem, NC</td>
+                                              <td>1</td>
+                                              <td>0</td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">January</th>
+                                              <td>Italy, TX</td>
+                                              <td>0</td>
+                                              <td>1</td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">January</th>
+                                              <td>New Orleans, LA</td>
+                                              <td>0</td>
+                                              <td>1</td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">January</th>
+                                              <td>Marshall County, KY</td>
+                                              <td>2</td>
+                                              <td>18</td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">January</th>
+                                              <td>Philadelphia, PA</td>
+                                              <td>1</td>
+                                              <td>0</td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">February</th>
+                                              <td>Los Angeles, CA</td>
+                                              <td>0</td>
+                                              <td>5</td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">February</th>
+                                              <td>Oxon Hill, MD</td>
+                                              <td>0</td>
+                                              <td>1</td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">February</th>
+                                              <td>Parkland, FL</td>
+                                              <td>17</td>
+                                              <td>14</td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">March</th>
+                                              <td>Mount Pleasant, MI</td>
+                                              <td>2</td>
+                                              <td>0</td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">March</th>
+                                              <td>Birmingham, AL</td>
+                                              <td>1</td>
+                                              <td>2</td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">March</th>
+                                              <td>Lexington, KY</td>
+                                              <td>0</td>
+                                              <td>1</td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">March</th>
+                                              <td>Birmingham, AL</td>
+                                              <td>2</td>
+                                              <td>1</td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">March</th>
+                                              <td>Great Mills, MD</td>
+                                              <td>2</td>
+                                              <td>1</td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">April</th>
+                                              <td>Ocala, FL</td>
+                                              <td>0</td>
+                                              <td>1</td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">May</th>
+                                              <td>Palmdale, CA</td>
+                                              <td>0</td>
+                                              <td>1</td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">May</th>
+                                              <td>Dixon, IL</td>
+                                              <td>0</td>
+                                              <td>1</td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">May</th>
+                                              <td>Santa Fe, TX</td>
+                                              <td>10</td>
+                                              <td>12</td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">May</th>
+                                              <td>Jonesboro, GA</td>
+                                              <td>1</td>
+                                              <td>1</td>
+                                          </tr>
+              
+                                      </tbody>
+                                  </table>
+                                  </div>
+                              </p>
+                          </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        School Related Attacks Around the World
+                        </button>
+                    </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                            <h1>School Related Attacks Around the World</h1>
+                            <h3>2010 - 2017</h3>
+                             <div id="worldDiv">
+                                 <canvas id="worldChart"></canvas>
+                             </div>
+                             <p>
+                                 Many schools around the world have suffered attacks, ranging from primary schools up to 
+                                 college and university. The chart above shows how in the United States, this is a much 
+                                 more common problem. It should be noted that the definition of attack used for the purpose 
+                                 of this graph is very narrowly defined. For this purpose, the school-related attacks are 
+                                 defined as being on school campuses or related to a school issue or event. It excludes 
+                                 attacks during warfare, robberies, gang violence, political or police attacks (as related 
+                                 to protests), accidents, single suicides, and murder-suicides by rejected spouses or suitors, 
+                                 as they are not the type of mass murder event that is the focus of concern. As well, it does 
+                                 not include any attacks that resulted in no injuries or were foiled. While 28 countries have 
+                                 been afflicted with such events between the years of 2010 through 2017, only countries with 
+                                 five or more attacks were included into the graph.
+                             </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        References
+                        </button>
+                    </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                            <h3>References Used for Data</h3>
+                            <ul>
+                                 <li>
+                                     <a href="https://www.npr.org/2018/01/24/580433745/a-look-at-all-11-school-shootings-that-took-place-in-the-first-23-days-of-2018" target="_blank">NPR</a>
+                                 </li>
+                                 <li>
+                                     <a href="https://www.cnn.com/2018/03/02/us/school-shootings-2018-list-trnd/index.html" target="_blank">CNN</a>
+                                 </li>
+                                 <li>
+                                     <a href="http://www.foxnews.com/us/2018/05/18/recent-school-shootings-in-us.html" target="_blank">Fox News</a>
+                                 </li>
+                                 <li>
+                                     <a href="https://www.washingtonpost.com/news/wonk/wp/2018/05/18/santa-fe-school-shooting-is-2nd-this-week-3rd-this-month-and-16th-this-year/?utm_term=.37a52497c730" target="_blank">The Washington Post</a>
+                                 </li>
+                                 <li>
+                                     <a href="https://en.wikipedia.org/wiki/List_of_school-related_attacks" target="_blank">Wikipedia</a>
+                                 </li>
+                             </ul>
+                             <p id="refFoot">
+                                 Site and data compiled and coded by <a href="https://npellow.github.io" target="_blank">Nichole Pellow</a>
+                             </p>
+             
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+                
+
+
+        <!-- JS links -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="schoolshootings.js"></script>
+    </body>
+</html>
