@@ -16,7 +16,7 @@ var chart = new Chart(ctx, {
             label: "Injuries",
             backgroundColor: 'rgb(255, 0, 0)',
             borderColor: 'rgb(255, 0, 0)',
-            data: [20, 20, 5, 1, 15],
+            data: [20, 20, 5, 1, 19],
           },     
         ]
     },
