@@ -1,0 +1,53 @@
+#top {
+    border-top: 3px solid #7F0000;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#storeImg {
+    height: 50%;
+    width: 50%;
+}
+
+a:link, a:visited {
+    color: #7F0000;
+}
+
+a:active, a:hover {
+    color: #532d2d;
+}
+
+.imgContainer {
+    color: #fff;
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    color: #7F0000;
+}
+
+#weBuy, #staffPicks, #events {
+    margin-bottom: 2%;
+}
+
+h4 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    #weBuyIMG {
+        display: none;
+    }
+}
