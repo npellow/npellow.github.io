@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Unicase|Ubuntu');
+
+body {
+    color: #000;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h5 {
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'Cormorant Unicase', serif;
+}
+
+#main {
+    margin-top: 10%;
+}
+
+#about {
+    padding-left: 5%;
+}
+
+.fab, .far, .fas {
+    padding-left: 10px;
+}
+
+.fab:hover, .far:hover, .fas:hover {
+    color: #3A7662;
+}
+
+#authorImg {
+    height: 400px;
+    border-radius: 25px;
+}
+
+#books {
+    padding-right: 5%;
+}
+
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+    #books {
+        margin-top: 5%;
+    }
+}
