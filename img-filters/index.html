@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Image Filters</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+    </head>
+<body>
+
+    <div class="container text-center" id="uploadIMG">
+        <h2>Image Filters</h2>
+        <input type='file' />
+        <br><img id="myIMG" src="babyseagulls-npellow.jpg" alt="Baby Seagulls - Image by Nichole Pellow" height=275>
+    </div>
+
+    <div class="container text-center" id="filterOptions">
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="noFilter" onclick="noFilter()">Remove Filter</button>
+            <p>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="gray" onclick="turnGray()">Grayscale</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="sepia" onclick="turnSepia()">Sepia</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="invert" onclick="turnInvert()">Invert</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="bright" onclick="turnBright()">Brightness</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="contrast" onclick="turnContrast()">Contrast</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="blur" onclick="turnBlur()">Blur</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="hue1" onclick="turnHue1()">Hue 1</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="hue2" onclick="turnHue2()">Hue 2</button>
+            </p>
+            <p style="margin-top: 1%;">
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="hue3" onclick="turnHue3()">Hue 3</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="hue4" onclick="turnHue4()">Hue 4</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="hue5" onclick="turnHue5()">Hue 5</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="sat1" onclick="turnSat1()">Saturate 1</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="sat2" onclick="turnSat2()">Saturate 2</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="sat3" onclick="turnSat3()">Saturate 3</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="sat4" onclick="turnSat4()">Saturate 4</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="sat5" onclick="turnSat5()">Saturate 5</button>
+            </p>
+    </div>
+
+
+<!-- JavaScript links -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
