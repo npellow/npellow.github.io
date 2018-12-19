@@ -5,18 +5,18 @@ var chart = new Chart(ctx, {
     // data for the dataset
     data: {
         
-        labels: ["January", "February", "March", "April", "May"],
+        labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
         datasets: [{
             label: "Deaths",
             backgroundColor: 'rgb(0, 0, 0)',
             borderColor: 'rgb(0, 0, 0)',
-            data: [4, 17, 7, 0, 11],
+            data: [4, 17, 7, 0, 11, 0, 0, 0, 2, 1, 0, 1],
         },
         {
             label: "Injuries",
             backgroundColor: 'rgb(255, 0, 0)',
             borderColor: 'rgb(255, 0, 0)',
-            data: [20, 20, 5, 1, 20],
+            data: [20, 20, 5, 1, 15, 0, 0, 3, 2, 1, 0, 0],
           },     
         ]
     },
