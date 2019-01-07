@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Satisfy');
+
+body {
+    background-color: #404040;
+    font-family: 'Lato', sans-serif;
+}
+
+#stuff {
+    color: #008080;
+    font-family: 'Satisfy', cursive;
+}
+
+#arrow {
+    position: absolute;
+    top:80vh;
+    transform:translateY(-100%);
+    color: #008080;
+    text-align: center !important;
+    font-size: 400%;
+}
+
+.pulse {
+    animation-name: pulse_animation;
+    animation-duration: 5000ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes pulse_animation {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.05); }
+    40% { transform: scale(1.08); }
+    50% { transform: scale(1); }
+    60% { transform: scale(1.08); }
+    70% { transform: scale(1.05); }
+    80% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+}
+
+h3, h5 {
+    padding-top: 3%;
+    padding-bottom: 1%;
+    color: #008080;
+}
+
+#skillIcons {
+    padding: 3%;
+}
+
+#particle {
+    background-color: rgba(64, 64, 64, 1);
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:0;
+    opacity: 1;
+  }
+
+#hero {
+    background-color: rgba(64, 64, 64, 0);
+    color: #ffffe6;
+    position: relative;
+    padding-top: 15%;
+  }
+
+#title {
+    height: 100vh;
+  }
+
+#about, #projects, #contact {
+    padding-top: 2%;
+    color: #ffffe6;
+  }
+
+.container-fluid {
+    position: relative;
+    background-color: rgba(89, 89, 89, 0.4);
+}
+
+.card {
+    background-color: rgba(64, 64, 64, 0);
+    border: none;
+}
+
+.card h5{
+    color: #ffffe6;
+}
+
+#socialMedia {
+    color: #008080;
+    font-size: 200%;
+    padding-top: 1%;
+    margin-bottom: 3%;
+}
+
+#socialMedia a:link, a:active, a:visited {
+    color: #008080;
+}
+
+#socialMedia a:hover {
+    color: #ffffe6;
+}
+
+#myFace {
+    border-radius: 25px;
+    border: 1px solid #008080;
+    filter: grayscale();
+    float: left;
+    margin: 0 2% 2% 0;
+}
+
+#myFace:hover {
+    filter: none;
+}
